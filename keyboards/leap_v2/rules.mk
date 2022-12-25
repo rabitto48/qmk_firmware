@@ -1,0 +1,19 @@
+# This file intentionally left blank
+
+MCU = RP2040
+BOOTLOADER = rp2040
+
+SLEEP_LED_ENABLE = no
+
+LTO_ENABLE = yes
+BACKLIGHT_ENABLE = no
+RGBLIGHT_ENABLE = yes
+AUDIO_ENABLE = no
+SPLIT_KEYBOARD = yes
+SERIAL_DRIVER = vendor
+
+OLED_ENABLE = yes
+OLED_DRIVER = SSD1306
+WS2812_DRIVER = vendor
+
+ENCODER_ENABLE = yes
