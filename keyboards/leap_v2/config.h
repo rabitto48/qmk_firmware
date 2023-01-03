@@ -28,12 +28,12 @@
 #define I2C1_SCL_PIN GP5
 
 #define OLED_DISPLAY_128X64
-#define OLED_SCROLL_TIMEOUT 15
 
 #define ENCODERS_PAD_A { }
 #define ENCODERS_PAD_B { }
 #define ENCODERS_PAD_A_RIGHT { GP6 }
 #define ENCODERS_PAD_B_RIGHT { GP7 }
+#define ENCODER_RESOLUTION 1
 
 #define RGB_DI_PIN GP22
 #ifdef RGB_DI_PIN
@@ -44,7 +44,18 @@
 #    define RGBLIGHT_VAL_STEP 10
 #    define RGBLIGHT_LIMIT_VAL 170 /* The maximum brightness level */
 #    define RGBLIGHT_EFFECT_BREATHE_MAX 255   // 0 to 255
-#    define RGBLIGHT_ANIMATIONS
+#    define RGBLIGHT_EFFECT_ALTERNATING
+#    define RGBLIGHT_EFFECT_BREATHING
+#    define RGBLIGHT_EFFECT_CHRISTMAS
+#    define RGBLIGHT_EFFECT_KNIGHT
+#    define RGBLIGHT_EFFECT_RAINBOW_MOOD
+#    define RGBLIGHT_EFFECT_RAINBOW_SWIRL
+#    define RGBLIGHT_EFFECT_RGB_TEST
+#    define RGBLIGHT_EFFECT_SNAKE
+#    define RGBLIGHT_EFFECT_STATIC_GRADIENT
+#    define RGBLIGHT_EFFECT_CHRISTMAS_INTERVAL 1000
+#    define RGBLIGHT_EFFECT_CHRISTMAS_STEP 4
+#    define RGBLIGHT_EFFECT_TWINKLE_PROBABILITY 127/127
 #endif
 
 /* Debounce reduces chatter (unintended double-presses) - set 0 if debouncing is not needed */
